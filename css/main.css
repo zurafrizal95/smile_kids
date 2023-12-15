@@ -1,0 +1,117 @@
+/** @format */
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Montserrat:wght@300;400;500;600;700;800;900&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  scroll-behavior: smooth;
+}
+
+header {
+  width: 100%;
+  position: relative;
+  padding: 20px 100px;
+}
+
+header .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header .container .logo h1 {
+  font-family: 'alfa slab one';
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: rgb(0, 76, 163);
+  text-align: center;
+  line-height: 15px;
+}
+
+header .container .logo h1 span {
+  font-size: 16px;
+  font-family: 'montserrat';
+}
+
+main {
+  width: 100%;
+  position: relative;
+  padding: 20px 100px;
+}
+
+main .products {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+main .products .product_card {
+  width: 19%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  padding: 5px;
+}
+
+main .products .product_card .img {
+  width: 100%;
+}
+
+main .products .product_card .img img {
+  width: 100%;
+  height: 180px;
+}
+
+main .products .product_card .product_name h2 {
+  color: black;
+  font-size: 12px;
+  font-family: 'montserrat';
+  text-align: center;
+  font-weight: 400;
+}
+
+main .products .product_card .price h2 {
+  font-size: 16px;
+  font-family: 'montserrat';
+}
+
+main .products .product_card .product_link {
+  text-align: center;
+}
+
+main .products .product_card .product_link a {
+  display: block;
+  font-size: 12px;
+  font-family: 'montserrat';
+  color: #fff;
+  background: rgb(0, 76, 163);
+  padding: 5px;
+  text-decoration: none;
+  margin-top: 3px;
+}
+
+@media (min-width: 300px) and (max-width: 600px) {
+  main {
+    padding: 20px 0;
+  }
+  main .products .product_card {
+    width: 48%;
+  }
+}
+@media (min-width: 600px) and (max-width: 900px) {
+  main {
+    padding: 20px 20px;
+  }
+  main .products .product_card {
+    width: 30%;
+  }
+}
